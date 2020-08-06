@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/edit_menu_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <include layout="@layout/confirm_only_menu_tab_bar"/>
+    <FrameLayout android:id="@+id/text_control_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tab_bar">
+        <ListView android:id="@+id/text_font_toolbar" android:layout_width="match_parent" android:layout_height="246dp"/>
+        <FrameLayout android:id="@+id/text_color_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_centerVertical="true">
+            <include android:id="@+id/color_picker_id" layout="@layout/color_picker_control"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/text_other_toolbar" android:layout_width="match_parent" android:layout_height="246dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp">
+                <TextView android:textColor="@color/mt_font_color" android:layout_width="128dp" android:layout_height="wrap_content" android:text="@string/edit_text_label_alignment" android:textAlignment="center"/>
+                <ImageButton android:id="@+id/text_align_left" android:background="#00000000" android:padding="@dimen/item_padding_left" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_align_left" android:paddingEnd="20dp"/>
+                <ImageButton android:id="@+id/text_align_center" android:background="#00000000" android:padding="@dimen/item_padding_left" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_align_center" android:paddingEnd="20dp"/>
+                <ImageButton android:id="@+id/text_align_right" android:background="#00000000" android:padding="@dimen/item_padding_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_align_right"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp">
+                <TextView android:textColor="@color/mt_font_color" android:layout_width="128dp" android:layout_height="wrap_content" android:text="@string/edit_text_label_shadow" android:textAlignment="center"/>
+                <SeekBar android:id="@+id/text_shadow_slider" android:paddingLeft="@dimen/text_seekbar_padding_left" android:paddingRight="@dimen/text_seekbar_padding_right" android:layout_width="match_parent" android:layout_height="match_parent" android:max="100" android:paddingStart="@dimen/text_seekbar_padding_left" android:paddingEnd="@dimen/text_seekbar_padding_right" android:progressBackgroundTint="@color/seek_bar_bg"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp">
+                <TextView android:textColor="@color/mt_font_color" android:layout_width="128dp" android:layout_height="wrap_content" android:text="@string/edit_text_label_alpha" android:textAlignment="center"/>
+                <SeekBar android:id="@+id/text_alpha_slider" android:paddingLeft="@dimen/text_seekbar_padding_left" android:paddingRight="@dimen/text_seekbar_padding_right" android:layout_width="match_parent" android:layout_height="match_parent" android:max="100" android:paddingStart="@dimen/text_seekbar_padding_left" android:paddingEnd="@dimen/text_seekbar_padding_right" android:progressBackgroundTint="@color/seek_bar_bg"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

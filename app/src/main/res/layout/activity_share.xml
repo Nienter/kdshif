@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/share_title_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <ImageView android:id="@+id/share_title_back" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="24dp" android:src="@mipmap/share_back" android:cropToPadding="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/back"/>
+            <TextView android:textSize="17.5sp" android:textColor="@color/share_title_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/share_title" android:layout_toRightOf="@+id/share_title_back" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/share_home" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_icon_home" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/share_home"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/share_input_panel" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="16dp" android:layout_below="@+id/share_title_bar">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/share_input_img" android:layout_width="100dp" android:layout_height="100dp" android:src="@mipmap/share_icon_tw" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/share_input_panel">
+            <RelativeLayout android:id="@+id/share_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="21.7dp" android:layout_marginRight="20dp" android:layout_marginBottom="31.7dp">
+                <com.snaperfect.style.daguerre.widget.ShareGridView android:gravity="center" android:id="@+id/share_item_btn" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:verticalSpacing="16dp" android:numColumns="3"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/share_ad_panel" android:background="@drawable/share_ad_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.gms.ads.AdView android:id="@+id/ad_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.3dp" android:layout_marginTop="7dp" android:layout_marginRight="14.3dp" android:layout_marginBottom="7dp" ads:adSize="MEDIUM_RECTANGLE" ads:adUnitId="@string/share_id"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

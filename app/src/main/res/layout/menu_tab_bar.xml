@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/tab_bar" android:layout_width="match_parent" android:layout_height="54dp">
+    <ImageView android:id="@+id/tab_bar_cancel" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@mipmap/edit_icon_cancel" android:layout_alignParentLeft="true" android:contentDescription="@string/dialog_button_cancel"/>
+    <ImageView android:id="@+id/tab_bar_confirm" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="10dp" android:layout_marginRight="18dp" android:layout_marginBottom="10dp" android:src="@mipmap/edit_icon_confirm" android:layout_alignParentRight="true" android:contentDescription="@string/dialog_button_confirm"/>
+    <LinearLayout android:gravity="center" android:id="@+id/tab_bar_tabs" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/style_left_padding" android:layout_marginRight="@dimen/style_left_padding" android:baselineAligned="false" android:layout_toLeftOf="@+id/tab_bar_confirm" android:layout_toRightOf="@+id/tab_bar_cancel" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+            <ImageView android:id="@+id/tab_button1" android:layout_width="32dp" android:layout_height="32dp" android:src="@mipmap/edit_back" android:contentDescription="@string/edit_bg_blur"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+            <ImageView android:id="@+id/tab_button2" android:layout_width="32dp" android:layout_height="32dp" android:src="@mipmap/edit_back"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+            <ImageView android:id="@+id/tab_button3" android:layout_width="32dp" android:layout_height="32dp" android:src="@mipmap/edit_back"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

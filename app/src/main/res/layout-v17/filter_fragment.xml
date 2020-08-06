@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/edit_menu_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+    <include layout="@layout/menu_title_bar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/filter_scrollview" android:layout_width="match_parent" android:layout_height="110dp">
+        <android.support.v7.widget.RecyclerView android:gravity="center" android:id="@+id/filter_scroll_bar" android:paddingLeft="@dimen/style_item_left_padding" android:paddingRight="@dimen/style_item_left_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/style_item_left_padding" android:paddingEnd="@dimen/style_item_left_padding"/>
+    </LinearLayout>
+</LinearLayout>

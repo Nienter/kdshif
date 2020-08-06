@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/style_item_left_padding" android:paddingRight="@dimen/style_item_left_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/style_top_margin" android:paddingStart="@dimen/style_item_left_padding" android:paddingEnd="@dimen/style_item_left_padding">
+    <LinearLayout android:layout_gravity="center" android:id="@+id/vit_image_container" android:background="@drawable/bg_border_unpress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/style_bottom_margin">
+        <com.snaperfect.style.daguerre.widget.RoundedImageView android:id="@+id/vit_image_view" android:layout_width="72dp" android:layout_height="72dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:cropToPadding="true" ads:riv_corner_radius="5dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@drawable/style_txt_status" android:layout_gravity="center" android:id="@+id/vit_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Test"/>
+</LinearLayout>

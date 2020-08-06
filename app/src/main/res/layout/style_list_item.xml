@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/style_top_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/picker_style_item_padding"
+    android:paddingRight="@dimen/picker_style_item_padding">
+
+    <LinearLayout
+        android:id="@+id/vit_image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/vit_image_view"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vit_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:text="Test"
+        android:textColor="#2b2b2b"
+        android:textSize="15sp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/mt_font_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/style_list_container" android:layout_width="match_parent" android:layout_height="220dp">
+        <android.support.v7.widget.RecyclerView android:gravity="center" android:id="@+id/style_list_view" android:paddingLeft="@dimen/picker_style_head_padding" android:paddingTop="@dimen/picker_style_top_padding" android:paddingRight="@dimen/picker_style_head_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/picker_style_head_padding" android:paddingEnd="@dimen/picker_style_head_padding"/>
+    </LinearLayout>
+    <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <View android:layout_width="match_parent" android:layout_height="9dp"/>
+</LinearLayout>

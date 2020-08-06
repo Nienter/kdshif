@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/preview_row_imageview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/preview_row_textview1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+            android:background="@color/ms_font_color"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mt_font_color"
+            android:textSize="13.3sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/preview_row_imageview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/preview_row_textview2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+            android:background="@color/ms_font_color"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/mt_font_color"
+            android:textSize="13.3sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

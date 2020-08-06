@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true" android:color="#d6d6d6"/>
+    <item android:state_focused="true" android:color="#d6d6d6"/>
+    <item android:color="#7c7c7c"/>
+</selector>
